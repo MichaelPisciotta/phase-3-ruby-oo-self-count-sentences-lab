@@ -3,7 +3,9 @@ require 'pry'
 class String
 
   def sentence?
-    
+      def sentence?
+      @sentence = if self.end_with?(".") ? true : false
+      end
   end
 
   def question?
@@ -18,3 +20,4 @@ class String
 
   end
 end
+
