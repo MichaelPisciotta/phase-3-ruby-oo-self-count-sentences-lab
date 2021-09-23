@@ -3,16 +3,16 @@ require 'pry'
 class String
 
   def sentence?
-      def sentence?
-      @self.sentence = end_with?(".") ? true : false
-      end
+    self.end_with?(".")
   end
 
   def question?
+    self.end_with?("?")
 
   end
 
   def exclamation?
+    self.end_with?("!")
 
   end
 
@@ -20,4 +20,7 @@ class String
 
   end
 end
+
+
+
 
