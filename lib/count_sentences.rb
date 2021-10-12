@@ -17,11 +17,14 @@ class String
 
   end
 
-  def count_sentences
-    sentence = self.split(".", "?", "!")
-    sentence_count = sentence.count
-    sentence_count 
+  def count_sentences 
+   sentences = self.split(/\.|\?|!/).filter { |s| !s.empty? } #ruby regex to search for end marks
+   sentences.count
+   #binding.pry
+  
+   
   end
+
 
 end
  
